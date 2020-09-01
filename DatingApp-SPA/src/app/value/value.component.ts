@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './value.component.html',
   styleUrls: ['./value.component.scss']
 })
+
 export class ValueComponent implements OnInit {
   values: any;
   constructor(private http: HttpClient) { }
