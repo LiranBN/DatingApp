@@ -17,9 +17,9 @@
         </li>
     </ul>
 
-    <div *ngIf="loggedIn()" class="dropdown">
-        <a class="dropdown-toggle text-light">Welcome User</a>
-        <div class="dropdown-menu">
+    <div *ngIf="loggedIn()" class="dropdown " dropdown>
+        <a class="dropdown-toggle text-light" dropdownToggle>Welcome {{authService.decodedToken?.unique_name | titlecase}}</a>
+        <div class="dropdown-menu" *dropdownMenu>
             <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Edit Profile</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#"><i class="fa fa-sing-out"></i> Logout</a>
